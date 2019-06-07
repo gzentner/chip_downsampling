@@ -11,7 +11,8 @@ options <- matrix(c(
 	"paired", "e", 1, "character", "if paired end or not",
 	"from", "f", 1, "character", "starting value",
 	"to", "t", 1, "character", "end value",
-	"by", "y", 1, "character", "by value"
+	"by", "y", 1, "character", "by value",
+	"minOverlap", "m", "1", "character", "minimum overlap"
 ), byrow=TRUE, ncol=5)
 
 opt <- getopt(options)
@@ -53,7 +54,7 @@ for (sample in samples) {
 			annot.ext=peaks[[as.character(sample)]],
 			isGTFAnnotationFile=FALSE,
 			useMetaFeatures=FALSE,
-			minOverlap=10,
+			minOverlap=opt$minOverlap,
 			largestOverlap=TRUE,
 			countMultiMappingReads=FALSE,
 			strandSpecific=0,

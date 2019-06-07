@@ -9,7 +9,7 @@
 
 ## activating environment
 
-conda activate chip-downsampling
+#conda activate chip-downsampling
 
 ## loading settings
 
@@ -82,5 +82,5 @@ Rscript ./bin/annotate_fragments.R \
 -e $PAIRED \
 -f $FROM \
 -t $TO \
--y $BY
-
+-y $BY \
+-m $MIN_OVERLAP
