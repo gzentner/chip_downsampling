@@ -56,6 +56,7 @@ The last step is to set a few settings in the 'settings.conf' file in the main r
 |BY|Intervals to downsamples to between the FROM and TO values.|
 |CONTROL|Input/control BAM file path and file name.|
 |GENOME_SIZE|Effective genome size.|
+|MIN_OVERLAP|Minimum number of bases of a fragment that must overlap with a peak for that fragment to be assigned to that peak.|
 
 ## Running the Workflow
 
