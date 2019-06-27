@@ -60,6 +60,7 @@ for SAMPLE in ${SAMPLES[@]}; do
 		-c $CONTROL \
 		-f BAMPE \
 		-g $GENOME_SIZE \
+		-q $QVAL \
 		--outdir ${WORKDIR}/results/sampled_peaks \
 		-n ${SAMPLE}_sampled_$(basename $BAM .bam)
 	else
@@ -68,6 +69,7 @@ for SAMPLE in ${SAMPLES[@]}; do
 		-c $CONTROL \
 		-f BAM \
 		-g $GENOME_SIZE \
+		-q $QVAL \
 		--outdir ${WORKDIR}/results/sampled_peaks \
 		-n ${SAMPLE}_sampled_$(basename $BAM .bam)
 	fi
