@@ -8,7 +8,7 @@ This workflow uses software from a conda environment to downsample reads, call p
 
 ## Cloning Repository
 
-To get started, you must first clone the FRiP repository. Navigate to a directory you would like to clone the repository to and enter `git clone https://github.com/rpolicastro/chip_downsampling.git`.
+To get started, you must first clone the FRiP repository. Navigate to a directory you would like to clone the repository to and enter `git clone https://github.com/gzentner/chip_downsampling.git`.
 
 ## Preparing Conda Environment
 
