@@ -66,7 +66,7 @@ for (sample in samples) {
 			annot.ext=peaks[[as.character(sample)]],
 			isGTFAnnotationFile=FALSE,
 			useMetaFeatures=FALSE,
-			minOverlap=10,
+			minOverlap=opt$minOverlap,
 			largestOverlap=TRUE,
 			countMultiMappingReads=FALSE,
 			strandSpecific=0,
