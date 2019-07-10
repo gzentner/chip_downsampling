@@ -10,6 +10,7 @@
 ## activating environment
 
 source activate chip-downsampling
+
 cd $PBS_O_WORKDIR
 
 ## loading settings
