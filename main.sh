@@ -9,7 +9,8 @@
 
 ## activating environment
 
-#conda activate chip-downsampling
+source activate chip-downsampling
+cd $PBS_O_WORKDIR
 
 ## loading settings
 
